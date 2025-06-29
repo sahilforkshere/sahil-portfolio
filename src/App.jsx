@@ -13,19 +13,19 @@ import ProjectsMain from './components/projectsSection/ProjectsMain'
 import SkillsMain from './components/skillsSection/SkillsMain'
 import SubSkills from './components/skillsSection/SubSkills'
 import SubHeroMain from './components/subHeroSection/SubHeroMain'
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
-   const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // simulate loading time (2 seconds)
     const timeout = setTimeout(() => setLoading(false), 2500);
-    
+
   }, []);
 
-  if (loading) return  <Loader/>;
-  
+  if (loading) return <Loader />;
+
 
 
 
@@ -39,8 +39,8 @@ function App() {
     <SkillsMain />
     <SubSkills />
     <ProjectsMain />
-<ContactMeMain/>
-<FooterMain/>
+    <ContactMeMain />
+    <FooterMain />
   </main>
 
 
